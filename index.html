@@ -1,65 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte, Futuro Sustentável</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agro Forte, Futuro Sustentável</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="logo">AgroSustentável</div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#pilares">Pilares</a>
-            <a href="#quiz">Quiz</a>
-        </nav>
-    </header>
+<header>
+    <h1>🌱 Agro Forte, Futuro Sustentável</h1>
+    <p>Equilíbrio entre produção e meio ambiente</p>
+</header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Agro Forte, Futuro Sustentável</h1>
-            <p>O equilíbrio perfeito entre a alta produtividade e a preservação do nosso planeta.</p>
-            <a href="#pilares" class="btn">Conhecer Práticas</a>
-        </div>
-    </section>
+<section class="painel">
+    <div class="card">
+        <h2>🌾 Produção</h2>
+        <span id="producao">50</span>
+    </div>
 
-    <section id="pilares" class="features">
-        <h2>Práticas para o Equilíbrio</h2>
-        <div class="cards-container">
-            <div class="card" onclick="mostrarDetalhes('Tecnologia no Campo', 'O uso de drones e sensores evita o desperdício de água e fertilizantes.')">
-                <h3>Tecnologia</h3>
-                <p>Clique para saber mais.</p>
-            </div>
-            <div class="card" onclick="mostrarDetalhes('Energia Limpa', 'Fazendas utilizando energia solar e biomassa para reduzir a pegada de carbono.')">
-                <h3>Energia Limpa</h3>
-                <p>Clique para saber mais.</p>
-            </div>
-            <div class="card" onclick="mostrarDetalhes('Preservação', 'O plantio direto e a rotação de culturas mantêm o solo saudável e produtivo.')">
-                <h3>Solo Vivo</h3>
-                <p>Clique para saber mais.</p>
-            </div>
-        </div>
-        <div id="painel-informativo" class="painel">
-            <p>Clique em um dos cartões acima para ver os detalhes da prática sustentável.</p>
-        </div>
-    </section>
+    <div class="card">
+        <h2>🌍 Sustentabilidade</h2>
+        <span id="sustentabilidade">50</span>
+    </div>
+</section>
 
-    <section id="quiz" class="quiz-section">
-        <h2>Desafio Agro Sustentável</h2>
-        <div class="quiz-container">
-            <p id="pergunta">Qual técnica ajuda a preservar os nutrientes do solo?</p>
-            <button class="btn-quiz" onclick="verificarResposta(true)">Rotação de Culturas</button>
-            <button class="btn-quiz" onclick="verificarResposta(false)">Uso excessivo de químicos</button>
-            <p id="resultado-quiz"></p>
-        </div>
-    </section>
+<section class="acoes">
+    <h2>Escolha uma ação:</h2>
 
-    <footer>
-        <p>&copy; 2026 Concurso Agrinho - Desenvolvido com Orgulho.</p>
-    </footer>
+    <button onclick="adubar()">
+        Fertilizante Orgânico
+    </button>
 
-    <script src="script.js"></script>
+    <button onclick="irrigacao()">
+        Irrigação Inteligente
+    </button>
+
+    <button onclick="desmatamento()">
+        Expandir Plantação
+    </button>
+
+    <button onclick="energiaSolar()">
+        Energia Solar
+    </button>
+</section>
+
+<section id="resultado"></section>
+
+<script src="script.js"></script>
+
 </body>
 </html>
